@@ -1,4 +1,4 @@
-CREATE OR ALTER PROCEDURE dbo.sp_WhoIsBurningMyCPU_2  
+CREATE OR ALTER PROCEDURE dbo.sp_WhoIsBurningMyCPU  
 (  
       @Top INT = 15,  -- Quantidade de linhas retornadas
       @MinCPUms INT = 100,  -- Minimo de ms de CPU considerados 
