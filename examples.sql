@@ -20,3 +20,15 @@ EXEC dbo.sp_WhoIsBurningMyCPU
      @KillerPercentage = 25,
      @KillerDop = 16;
 
+--Query para simular uso de CPU elevado:
+SET NOCOUNT ON;
+
+DECLARE @i BIGINT = 0;
+DECLARE @x FLOAT = 0;
+
+WHILE @i < 200000000
+BEGIN
+    SET @x = SIN(@i) * COS(@i) * TAN(@i);
+    SET @i += 1;
+END
+
