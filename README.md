@@ -4,7 +4,14 @@ Stored Procedure para identificação rápida de sessões ofensivas de CPU no SQ
 # Objetivo
 Detectar rapidamente sessões que consomem CPU de forma desproporcional, utilizam paralelismo excessivo e prejudicam o ambiente.
 
-A procedure classifica sessões usando múltiplos critérios simultâneos:
+# Parâmetros
+
+- @Top: Número máximo de sessões retornadas
+- @MinCPUms: CPU mínima considerada
+- @ShowSystem: Inclui sessões do sistema
+- @KillerPercentage: % estimada de CPU para marcar ofensora
+- @KillerDop: DOP mínimo considerado agressivo
+- @KillerMemoryMB: Memory Grant mínimo considerado agressivo
 
 # Métricas coletadas
 
