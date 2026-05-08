@@ -43,3 +43,16 @@ Uma sessão é marcada como ofensora quando qualquer condição é verdadeira:
 CPU% >= @KillerPercentage |
  OR DOP >= @KillerDop | 
  OR MemoryGrant >= @KillerMemoryMB
+
+
+# Casos de uso
+- CPU 100% em produção
+- Paralelismo descontrolado
+- Query regressiva após deploy
+- Investigação rápida de incidentes
+- Laboratórios de troubleshooting
+
+# Observações
+- Percentual de CPU é estimado com base nas requisições ativas.
+- Não substitui monitoramento contínuo.
+- Ferramenta voltada para análise operacional imediata.
